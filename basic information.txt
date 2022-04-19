@@ -1,0 +1,78 @@
+Console.WriteLine("Hello! Everyone!");
+Console.WriteLine("Nice to meet you!");
+Console.WriteLine("你叫甚麼名字?");//名字
+string name = Console.ReadLine();
+
+Console.WriteLine("你的年齡?");//年齡
+string age = Console.ReadLine();
+
+Console.WriteLine("你的性別是?");
+string sexans = Console.ReadLine();
+
+Console.WriteLine("你的出生年月日?");
+string birth = Console.ReadLine();
+
+Console.WriteLine("你的學號是?");
+string number = Console.ReadLine();
+
+Console.WriteLine("你的名字是"+name);
+Console.WriteLine("你的年齡是"+age);
+Console.WriteLine("你的性別是"+sexans);
+Console.WriteLine("你的生日是"+birth);
+Console.WriteLine("你的學號是"+number);
+Console.WriteLine("V(Y U Y)V");
+Console.WriteLine("請問您輸入的值正確嗎?");
+Console.WriteLine("正確請輸入1    錯誤請輸入2.");
+
+string check = Console.ReadLine();
+
+//int checkint=Int32 .Parse(check);
+
+if (check == "1")
+{
+Console .WriteLine ("穴穴泥的填寫");
+}
+
+else if (check == "2")
+{
+Console .WriteLine ("請問要修改的值是哪一個");
+Console .WriteLine ("姓名請打1");
+Console .WriteLine ("姓別請打2");
+Console .WriteLine ("生日請打3");
+Console .WriteLine ("學號請打4");
+
+string change = Console .ReadLine ();
+switch (change)
+{
+case "1":
+Console .WriteLine ("輸入正確姓名");
+name ="";
+name = Console .ReadLine ();
+break; 
+
+case "2":
+Console .WriteLine ("輸入正確姓別");
+sexans ="";
+sexans = Console .ReadLine ();
+break; 
+
+case "3":
+Console .WriteLine ("輸入正確生日");
+birth ="";
+birth = Console .ReadLine ();
+break; 
+
+case "4":
+Console .WriteLine ("輸入正確學號");
+number ="";
+number = Console .ReadLine ();
+break; 
+
+}
+Console.WriteLine("您的姓名是："+ name );
+Console.WriteLine("您的性別是："+ sexans );
+Console.WriteLine("您的生日是："+ birth );
+Console.WriteLine("您的學號是："+ number );
+Console.WriteLine("謝謝泥的填寫");
+Console.WriteLine("V(Y U Y)V");
+}
